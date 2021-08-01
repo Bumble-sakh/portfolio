@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0" mask-type="alpha">
+    <path fill="#000000" d="M51.3,-18.6C57.1,1,45.8,24.2,26.7,38.5C7.6,52.9,-19.4,58.3,-40.8,45.3C-62.2,32.3,-78.2,0.8,-70.5,-21.5C-62.8,-43.8,-31.4,-57.1,-4.3,-55.7C22.8,-54.3,45.6,-38.2,51.3,-18.6Z" transform="translate(100 100)" />
+  </mask>
+  <g mask="url(#mask0)">
+    <path fill="#000000" d="M51.3,-18.6C57.1,1,45.8,24.2,26.7,38.5C7.6,52.9,-19.4,58.3,-40.8,45.3C-62.2,32.3,-78.2,0.8,-70.5,-21.5C-62.8,-43.8,-31.4,-57.1,-4.3,-55.7C22.8,-54.3,45.6,-38.2,51.3,-18.6Z" transform="translate(100 100)" />
+    <image class="home_blob-img" xlink:href="assets/img/perfil.png" />
+  </g>
+</svg>

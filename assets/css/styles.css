@@ -381,7 +381,123 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+.skill__container {
+    row-gap: 0;
+}
 
+.skills__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills__icon {
+    margin-right: var(--mb-0-75);
+}
+
+.skills__title {
+    font-size: var(--h3-font-size);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills__subtitle {
+    font-size: var(--smaler-font-size);
+    color: var(--text-color-light);
+}
+
+.skills__arrow {
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills__list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage {
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar {
+    background-color: var(--first-color-lighter);
+}
+
+.skills__percentage {
+    display: block;
+    background-color: var(--first-color);
+}
+
+@keyframes progres{
+    0%{
+      width: 0%;
+    } 
+}
+
+.skills__html {
+    width: 90%;
+    animation: progres .5s;
+}
+
+.skills__css {
+    width: 80%;
+    animation: progres .5s;
+}
+
+.skills__javascript {
+    width: 60%;
+    animation: progres .5s;
+}
+
+.skills__vue {
+    width: 75%;
+    animation: progres .5s;
+}
+
+.skills__php {
+    width: 80%;
+    animation: progres .5s;
+}
+
+.skills__mysql {
+    width: 85%;
+    animation: progres .5s;
+}
+
+.skills__laravel {
+    width: 75%;
+    animation: progres .5s;
+}
+
+.skills__close .skills__list {
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow {
+    transform: rotate(-180deg);
+}
 
 /*==================== QUALIFICATION ====================*/
 

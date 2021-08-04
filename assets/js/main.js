@@ -105,7 +105,27 @@ skillsContent.forEach(n => n.addEventListener('click', toogleSkills));
 // skillsArrow.forEach(n => n.addEventListener('click', skillsAction));
 
 /*==================== QUALIFICATION TABS ====================*/
+const qualButton = document.querySelectorAll('.qualification__button');
+const contentEducation = document.getElementById('education');
+const contentWork = document.getElementById('work');
 
+function qAction(e) {
+
+    if(e.currentTarget.innerText == 'Work') {
+        qualButton[0].classList.remove('qualification__active');
+        qualButton[1].classList.add('qualification__active');
+        contentEducation.classList.remove('qualification__active');
+        contentWork.classList.add('qualification__active');
+    } else if(e.currentTarget.innerText == 'Education') {
+        qualButton[1].classList.remove('qualification__active');
+        qualButton[0].classList.add('qualification__active');
+        contentEducation.classList.add('qualification__active');
+        contentWork.classList.remove('qualification__active');
+    }
+    
+}
+
+qualButton.forEach(n => n.addEventListener('click', qAction));
 
 /*==================== SERVICES MODAL ====================*/
 

@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
     <title>Портфолио</title>
 </head>
 <body>
     <!-- ==================== HEADER ==================== -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="" class="nav__logo">Игорь</a>
+            <a href="" class="nav__logo">Alexa</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid" id="nav-list">
                     <li class="nav__item">
                         <a href="#home" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i> Начало
+                            <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> Обо мне
+                            <i class="uil uil-user nav__icon"></i> About
                         </a>
                     </li>
                     <li class="nav__item">
@@ -42,8 +44,8 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contactme" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i>Связаться
+                        <a href="#contacts" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contacts
                         </a>
                     </li>
                 </ul>
@@ -90,18 +92,18 @@
                         </svg>
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Привет, меня зовут Игорь</h1>
-                        <h3 class="title__subtitle">Я начинающий веб разработчик</h3>
+                        <h1 class="home__title">Hi, I'm Alexa</h1>
+                        <h3 class="title__subtitle">Fron end developer</h3>
                         <p class="home__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda quas, facere, veniam ea, esse sequi numquam sunt consequatur incidunt eaque maiores adipisci quidem? Rem suscipit perferendis voluptas voluptatibus nisi modi!</p>
                         <a href="#contact" class="button button--flex">
-                            Связаться <i class="uil uil-message button__icon"></i>
+                            Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Ниже</span>
+                        <span class="home__scroll-name">Scroll down</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
                 </div>
@@ -110,7 +112,7 @@
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
-            <h2 class="section__title">Обо мне</h2>
+            <h2 class="section__title">About me</h2>
             <span class="section__subtitle">My introduction</span>
 
             <div class="about__container container grid">
@@ -539,8 +541,63 @@
 
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
-            
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
 
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern website</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Brand Design</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Online Store</h3>
+                            <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
@@ -556,9 +613,8 @@
         </section>
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-
-
+        <section class="contact section" id="contacts">
+            
         </section>
     </main>
 
@@ -571,7 +627,7 @@
     <!--==================== SCROLL TOP ====================-->
 
     <!-- ==================== SWIPER JS ==================== -->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- ==================== MAIN JS ==================== -->
     <script src="assets/js/main.js"></script>
